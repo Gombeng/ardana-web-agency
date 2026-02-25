@@ -11,10 +11,10 @@ const testimonials = [
     avatar: "https://i.pravatar.cc/150?u=andi"
   },
   {
-    name: "Sekar Syafira",
+    name: "Maya Indrayani",
     role: "CEO of BeautySpace",
     msg: "Visualnya bener-bener mewah, jauh di atas agensi lain yang pernah saya coba. Branding bisnis saya jadi naik kelas dalam semalam.",
-    avatar: "https://i.pravatar.cc/150?u=sekar"
+    avatar: "https://i.pravatar.cc/150?u=maya"
   },
   {
     name: "Budi Santoso",
