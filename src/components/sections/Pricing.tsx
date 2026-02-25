@@ -5,43 +5,47 @@ import { Button } from "@/components/ui/button"
 
 const tiers = [
   {
-    name: "Silver",
-    price: "700rb",
-    features: ["Landing Page Sederhana", "Domain & Hosting 1 Thn", "Mobile Responsive", "Integrasi WhatsApp"],
-    label: "Starter"
+    name: "Starter",
+    price: "900rb",
+    features: ["Personal Portfolio", "Single Page Design", "Domain & Hosting 1 Thn", "Standard SEO", "Integrasi WhatsApp"],
+    label: "Lite",
+    desc: "Cocok untuk individu yang ingin pamer karya atau CV digital."
   },
   {
-    name: "Gold",
-    price: "1.6jt",
-    features: ["Semua Fitur Silver", "E-Commerce / Blog", "Kelola Produk/Artikel", "Email Bisnis (5 Akun)"],
-    label: "Growth"
+    name: "Business",
+    price: "1.8jt",
+    features: ["Company Profile", "5-7 Pages Design", "Domain & Hosting 1 Thn", "Advance SEO Strategy", "Google Maps Sync"],
+    label: "Growth",
+    desc: "Cocok untuk UMKM yang butuh identitas digital resmi."
   },
   {
-    name: "Diamond",
-    price: "2jt",
-    features: ["Semua Fitur Gold", "Business Profile Pro", "Galeri Proyek & Testimoni", "Keamanan SSL Premium"],
-    label: "Corporate",
-    popular: true
+    name: "Premium",
+    price: "3.5jt",
+    features: ["Advanced Landing Page", "Dynamic CMS (Bisa Edit Sendiri)", "Next.js High Speed", "Analitik Penjualan", "Support Prioritas 6 Bln"],
+    label: "Professional",
+    popular: true,
+    desc: "Solusi lengkap untuk konversi penjualan tinggi."
   },
   {
-    name: "Platinum",
-    price: "3jt",
-    features: ["Custom Fitur Kompleks", "Desain Unik (Figma)", "SEO + Speed Optm", "Support Prioritas 24/7"],
-    label: "Exclusive"
+    name: "Enterprise",
+    price: "7jt+",
+    features: ["Custom Web Application", "Full UI/UX Custom Figma", "Keamanan Tingkat Tinggi", "Multilingual Support", "Maintenance Selamanya"],
+    label: "Elite",
+    desc: "Untuk perusahaan besar dengan kebutuhan fitur kustom."
   }
 ]
 
 export default function Pricing() {
   return (
-    <section id="harga" className="py-24 md:py-32 px-6 bg-slate-950 text-white selection:bg-blue-500/30">
+    <section id="harga" className="py-24 md:py-32 px-6 bg-[#050505] text-white selection:bg-blue-500/30">
       <div className="max-w-[1400px] mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 md:mb-24 gap-10 text-center md:text-left">
           <div className="space-y-4 md:space-y-6">
-            <h2 className="text-xs md:text-sm font-black text-blue-500 uppercase tracking-[0.4em]">Future Investment</h2>
-            <p className="text-4xl sm:text-5xl md:text-7xl font-[900] tracking-tighter leading-[1.1] md:leading-[0.9]">Pilih Paket <br className="hidden md:block" /> Kemenangan Anda</p>
+            <h2 className="text-xs md:text-sm font-black text-blue-500 uppercase tracking-[0.4em]">Strategic Pricing</h2>
+            <p className="text-4xl sm:text-5xl md:text-7xl font-[900] tracking-tighter leading-[1.1] md:leading-[0.9]">Paket Investasi <br className="hidden md:block" /> Digital Anda</p>
           </div>
-          <p className="text-slate-400 max-w-sm text-base md:text-lg font-medium leading-relaxed">
-            Investasi cerdas untuk digitalisasi bisnis Anda dengan standar tertinggi di Jakarta.
+          <p className="text-slate-500 max-w-sm text-base md:text-lg font-medium leading-relaxed italic border-l border-white/5 pl-8">
+            Harga kompetitif dengan kualitas desain agensi global.
           </p>
         </div>
 
@@ -61,21 +65,24 @@ export default function Pricing() {
                 </div>
               )}
               
-              <div className="mb-8 md:mb-10">
+              <div className="mb-6 md:mb-8">
                 <span className={`font-black uppercase tracking-[0.2em] text-[9px] md:text-[10px] ${t.popular ? "text-blue-100" : "text-blue-400"}`}>
                   {t.label}
                 </span>
-                <h3 className="text-3xl md:text-4xl font-[900] mt-1 md:mt-2 tracking-tighter">{t.name}</h3>
+                <h3 className="text-3xl md:text-4xl font-[900] mt-1 md:mt-2 tracking-tighter uppercase italic">{t.name}</h3>
+                <p className={`text-[11px] mt-4 leading-relaxed font-medium ${t.popular ? "text-blue-100/70" : "text-slate-500"}`}>
+                  {t.desc}
+                </p>
               </div>
 
-              <div className="flex items-baseline gap-2 mb-8 md:mb-10">
+              <div className="flex items-baseline gap-2 mb-8 md:mb-10 pt-4 border-t border-white/5">
                 <span className="text-4xl md:text-5xl font-[900]">Rp {t.price}</span>
               </div>
 
               <ul className="space-y-4 md:space-y-5 mb-10 md:mb-12 flex-grow text-left">
                 {t.features.map((f, j) => (
-                  <li key={j} className="flex items-center gap-3 md:gap-4 text-[13px] md:text-[15px] font-medium opacity-80">
-                    <div className={`w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center shrink-0 ${t.popular ? "bg-white/20" : "bg-blue-600/20"}`}>
+                  <li key={j} className="flex items-center gap-3 md:gap-4 text-[13px] md:text-[14px] font-medium opacity-80">
+                    <div className={`w-5 h-5 md:w-6 md:h-6 rounded-lg flex items-center justify-center shrink-0 ${t.popular ? "bg-white/20" : "bg-blue-600/20"}`}>
                       <Check size={12} className={t.popular ? "text-white" : "text-blue-400"} strokeWidth={4} />
                     </div>
                     <span className="truncate">{f}</span>
