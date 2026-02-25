@@ -22,8 +22,8 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6 md:gap-8">
-          <Button className="h-16 md:h-20 w-full sm:w-auto px-8 md:px-12 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl md:rounded-3xl text-lg md:text-xl font-[800] shadow-2xl shadow-blue-500/20 transition-all active:scale-95 group">
-            Mulai Sekarang
+          <Button asChild className="h-16 md:h-20 w-full sm:w-auto px-8 md:px-12 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl md:rounded-3xl text-lg md:text-xl font-[800] shadow-2xl shadow-blue-500/20 transition-all active:scale-95 group">
+            <a href="https://wa.me/6282285598500" target="_blank">Mulai Sekarang</a>
           </Button>
           
           <button className="flex items-center space-x-4 group">

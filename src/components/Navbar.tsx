@@ -51,8 +51,10 @@ export default function Navbar() {
           <Link href="/dashboard" className="hidden sm:inline-flex text-xs font-black uppercase tracking-widest text-slate-400 hover:text-white transition-colors mr-2">
             Login
           </Link>
-          <Button className="bg-blue-600 hover:bg-white hover:text-black text-white font-black px-6 md:px-8 py-5 md:py-6 rounded-xl md:rounded-2xl shadow-xl transition-all active:scale-95 uppercase tracking-widest text-[10px]">
-            Konsultasi <ChevronRight className="ml-2 w-4 h-4 hidden md:block" />
+          <Button asChild className="bg-blue-600 hover:bg-white hover:text-black text-white font-black px-6 md:px-8 py-5 md:py-6 rounded-xl md:rounded-2xl shadow-xl transition-all active:scale-95 uppercase tracking-widest text-[10px]">
+            <a href="https://wa.me/6282285598500" target="_blank">
+              Konsultasi <ChevronRight className="ml-2 w-4 h-4 hidden md:block" />
+            </a>
           </Button>
           
           <div className="lg:hidden">

@@ -48,8 +48,12 @@ export default function Footer() {
             <h4 className="text-[11px] font-black uppercase tracking-[0.4em] text-blue-500 mb-10">Contact</h4>
             <ul className="space-y-6 text-slate-400 font-bold uppercase tracking-wider text-[12px]">
               <li className="hover:text-white transition-colors cursor-pointer tracking-tight">Jakarta, Indonesia</li>
-              <li className="hover:text-white transition-colors cursor-pointer tracking-tight">sales@ardana.digital</li>
-              <li className="hover:text-white transition-colors cursor-pointer tracking-tight">+62 822-2443-4159</li>
+              <li className="hover:text-white transition-colors cursor-pointer tracking-tight underline">
+                <a href="mailto:syahrizalardana@gmail.com">syahrizalardana@gmail.com</a>
+              </li>
+              <li className="hover:text-white transition-colors cursor-pointer tracking-tight">
+                <a href="https://wa.me/6282285598500">+62 822-8559-8500</a>
+              </li>
             </ul>
           </div>
         </div>

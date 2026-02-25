@@ -83,12 +83,12 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <Button className={`w-full h-14 md:h-16 rounded-xl md:rounded-2xl text-base md:text-lg font-black transition-all active:scale-95 ${
+              <Button asChild className={`w-full h-14 md:h-16 rounded-xl md:rounded-2xl text-base md:text-lg font-black transition-all active:scale-95 ${
                 t.popular 
                   ? "bg-white text-blue-600 hover:bg-slate-100" 
                   : "bg-blue-600 text-white hover:bg-blue-700 shadow-xl shadow-blue-900/20"
               }`}>
-                Pilih Paket
+                <a href={`https://wa.me/6282285598500?text=Halo%20Ardana%20Digital,%20saya%20tertarik%20dengan%20paket%20${t.name}`} target="_blank">Pilih Paket</a>
               </Button>
             </div>
           ))}
