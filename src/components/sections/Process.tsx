@@ -25,25 +25,25 @@ const steps = [
 
 export default function Process() {
   return (
-    <section className="py-32 bg-[#0A0A0A] border-t border-white/5 relative overflow-hidden">
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-indigo-600/5 blur-[150px] rounded-full" />
+    <section className="py-24 md:py-32 bg-[#0A0A0A] border-t border-white/5 relative overflow-hidden">
+      <div className="absolute bottom-0 right-0 w-64 md:w-[500px] h-64 md:h-[500px] bg-indigo-600/5 blur-[100px] md:blur-[150px] rounded-full" />
 
       <div className="max-w-[1400px] mx-auto px-6 relative z-10">
-        <div className="text-center mb-24 space-y-4">
+        <div className="text-center mb-16 md:mb-24 space-y-4">
           <h2 className="text-xs font-black text-blue-500 uppercase tracking-[0.4em]">Our Workflow</h2>
-          <p className="text-5xl md:text-6xl font-[900] tracking-tighter text-white">Bagaimana Kami Bekerja</p>
+          <p className="text-4xl md:text-6xl font-[900] tracking-tighter text-white">Bagaimana Kami Bekerja</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {steps.map((step, i) => (
             <div key={i} className="relative group">
-              <div className="text-8xl font-black text-white/[0.03] absolute -top-12 -left-4 group-hover:text-blue-600/10 transition-colors duration-500 italic">
+              <div className="text-7xl md:text-8xl font-black text-white/[0.03] absolute -top-10 md:-top-12 -left-4 group-hover:text-blue-600/10 transition-colors duration-500 italic">
                 {step.num}
               </div>
               <div className="relative z-10 space-y-6">
-                <div className="h-[2px] w-12 bg-blue-600 rounded-full mb-8 group-hover:w-full transition-all duration-700" />
-                <h3 className="text-2xl font-black text-white tracking-tight leading-tight">{step.title}</h3>
-                <p className="text-slate-500 font-medium leading-relaxed text-sm">
+                <div className="h-[2px] w-12 bg-blue-600 rounded-full mb-6 md:mb-8 group-hover:w-full transition-all duration-700" />
+                <h3 className="text-xl md:text-2xl font-black text-white tracking-tight leading-tight">{step.title}</h3>
+                <p className="text-slate-400 font-medium leading-relaxed text-sm">
                   {step.desc}
                 </p>
               </div>
