@@ -1,7 +1,10 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/sections/Hero";
 import Services from "@/components/sections/Services";
+import Process from "@/components/sections/Process";
+import Testimonials from "@/components/sections/Testimonials";
 import Pricing from "@/components/sections/Pricing";
+import FAQ from "@/components/sections/FAQ";
 import Footer from "@/components/sections/Footer";
 
 export default function Home() {
@@ -13,7 +16,10 @@ export default function Home() {
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-white/5 to-transparent" />
       </div>
       <Services />
+      <Process />
+      <Testimonials />
       <Pricing />
+      <FAQ />
       <Footer />
     </main>
   );
