@@ -22,7 +22,7 @@ export default function Hero() {
     visible: { 
       opacity: 1, 
       y: 0,
-      transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+      transition: { duration: 0.8, ease: "easeOut" }
     }
   }
 
@@ -86,7 +86,7 @@ export default function Hero() {
         <motion.div 
           initial={{ opacity: 0, scale: 0.9, rotate: 5 }}
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
-          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.5 }}
+          transition={{ duration: 1.2, ease: "easeOut", delay: 0.5 }}
           className="relative mt-12 lg:mt-0"
         >
           {/* Main Visual */}
